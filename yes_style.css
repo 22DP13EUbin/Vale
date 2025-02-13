@@ -18,18 +18,35 @@ body {
 }
 
 .gif_container {
-    display: flex;
-    flex-direction: column; /* Располагаем картинки вертикально */
-    align-items: center; /* Центрируем картинки по горизонтали */
-    gap: 20px; /* Расстояние между картинками */
+    position: relative; /* Делаем контейнер относительным для позиционирования внутри него */
 }
 
 .gif_container img.gif {
-    width: 200px; /* Уменьшаем ширину GIF */
+    width: 300px; /* Размер GIF-картинки */
     height: auto; /* Сохраняем пропорции */
 }
 
 .gif_container img.photo {
-    width: 15px; /* Уменьшаем ширину фото */
+    width: 100px; /* Размер других картинок */
     height: auto; /* Сохраняем пропорции */
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+/* Позиционируем другие картинки вокруг GIF */
+.gif_container img.photo1 {
+    top: -50px; /* Над GIF */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gif_container img.photo2 {
+    top: 50%; /* Справа от GIF */
+    right: -50px;
+    transform: translateY(-50%);
+}
+
+.gif_container img.photo3 {
+    bottom: -50px; /* Под GIF */
+    left: 50%;
+    transform: translateX(-50%);
 }
