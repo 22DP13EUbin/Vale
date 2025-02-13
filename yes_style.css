@@ -30,6 +30,6 @@ body {
 }
 
 .gif_container img.photo {
-    width: 150px; /* Уменьшаем ширину фото */
+    width: 15px; /* Уменьшаем ширину фото */
     height: auto; /* Сохраняем пропорции */
 }
