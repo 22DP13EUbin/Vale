@@ -17,36 +17,9 @@ body {
     color: #d32f2f;
 }
 
-.gif_container {
-    position: relative; /* Делаем контейнер относительным для позиционирования внутри него */
+.gif_container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
 }
 
-.gif_container img.gif {
-    width: 300px; /* Размер GIF-картинки */
-    height: auto; /* Сохраняем пропорции */
-}
-
-.gif_container img.photo {
-    width: 100px; /* Размер других картинок */
-    height: auto; /* Сохраняем пропорции */
-    position: absolute; /* Абсолютное позиционирование */
-}
-
-/* Позиционируем другие картинки вокруг GIF */
-.gif_container img.photo1 {
-    top: -50px; /* Над GIF */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.gif_container img.photo2 {
-    top: 50%; /* Справа от GIF */
-    right: -50px;
-    transform: translateY(-50%);
-}
-
-.gif_container img.photo3 {
-    bottom: -50px; /* Под GIF */
-    left: 50%;
-    transform: translateX(-50%);
-}
